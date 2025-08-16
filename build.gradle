@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+subprojects {
+    configurations.configureEach {
+        resolutionStrategy.preferProjectModules()
+    }
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'org.apache.commons:commons-compress:1.27.1' // Use the recommended version
+    }
+}

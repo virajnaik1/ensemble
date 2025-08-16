@@ -1,0 +1,5 @@
+rootProject.name = 'ensemble'
+include 'offer-manager'
+include 'oauth2-manager'
+include 'service-registory'
+
